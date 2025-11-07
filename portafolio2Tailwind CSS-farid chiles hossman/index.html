@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio - Fari Chiles</title>
+
+  <!-- Importar Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-600 text-white">
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="flex flex-col items-center justify-center min-h-screen text-center px-6 bg-blue-700">
+    <img src="fari.jpg" alt="Foto de Fari Chiles"
+         class="rounded-full w-36 h-36 shadow-lg mb-4 object-cover border-4 border-white">
+    <h1 class="text-4xl font-extrabold">Fari Chiles</h1>
+    <p class="text-gray-200 mt-1">25 años</p>
+    <p class="max-w-xl text-gray-100 mt-4">
+      Técnico en soporte de sistemas y diseñador visual digital.
+      Me apasiona crear interfaces limpias, funcionales y modernas.
+    </p>
+
+    <!-- Botones -->
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <a href="#proyectos"
+         class="bg-white text-blue-700 font-semibold px-5 py-3 rounded-md hover:bg-gray-100 transition transform hover:scale-105">
+         Ver proyectos
+      </a>
+
+      <a href="#contacto"
+         class="bg-blue-900 text-white px-5 py-3 rounded-md hover:bg-blue-800 transition transform hover:scale-105">
+         Contáctame
+      </a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN "SOBRE MÍ" -->
+  <section id="sobre-mi" class="py-12 bg-blue-500">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold text-white">Sobre mí</h2>
+      <p class="text-gray-100 mt-3">
+        Soy Fari Chiles, técnico en soporte de sistemas informáticos y diseñador visual digital.
+        Disfruto aprender nuevas tecnologías y crear soluciones digitales útiles para las personas.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN "PROYECTOS" -->
+  <section id="proyectos" class="py-12 bg-blue-600">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-center text-white mb-6">Proyectos</h2>
+
+      <!-- GRID de tarjetas -->
+      <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+
+        <!-- PROYECTO 1 -->
+        <article class="bg-white rounded-xl shadow p-4 hover:shadow-xl transition transform hover:-translate-y-2">
+          <div class="overflow-hidden rounded-md">
+            <img src="Portafolio Personal.jpg" alt="Proyecto Portafolio Personal"
+                 class="rounded-md w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <h3 class="font-semibold text-lg mt-3 text-blue-700">Portafolio Personal</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Sitio web creado para mostrar mis proyectos, habilidades y experiencia profesional.
+          </p>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="bg-white rounded-xl shadow p-4 hover:shadow-xl transition transform hover:-translate-y-2">
+          <div class="overflow-hidden rounded-md">
+            <img src="interfaz.jpg" alt="Proyecto Interfaz Móvil"
+                 class="rounded-md w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <h3 class="font-semibold text-lg mt-3 text-blue-700">Interfaz Móvil</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Prototipo de aplicación móvil centrado en experiencia de usuario (UX) y diseño intuitivo.
+          </p>
+        </article>
+
+        <!-- PROYECTO 3 -->
+        <article class="bg-white rounded-xl shadow p-4 hover:shadow-xl transition transform hover:-translate-y-2">
+          <div class="overflow-hidden rounded-md">
+            <img src="Sistema de Inventario.jpg" alt="Proyecto Sistema de Inventario"
+                 class="rounded-md w-full h-48 object-cover transition-transform duration-500 hover:scale-110">
+          </div>
+          <h3 class="font-semibold text-lg mt-3 text-blue-700">Sistema de Inventario</h3>
+          <p class="text-sm text-gray-600 mt-1">
+            Aplicación web en PHP y MySQL para la gestión de inventario de productos.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN "CONTACTO" -->
+  <section id="contacto" class="py-12 bg-blue-700 text-center">
+    <h2 class="text-2xl font-bold text-white mb-3">Contacto</h2>
+    <p class="text-gray-200 mb-5">¿Quieres colaborar o contratarme? ¡Escríbeme!</p>
+
+    <div class="space-y-3">
+      <p class="font-semibold">📧 Email: 
+        <a href="mailto:faridchileshossma@gmail.com" class="text-white underline hover:text-gray-200">
+          faridchileshossma@gmail.com
+        </a>
+      </p>
+
+      <p class="font-semibold">📞 Teléfono: 
+        <a href="tel:+573001234567" class="text-white underline hover:text-gray-200">
+          +57 300 123 4567
+        </a>
+      </p>
+    </div>
+
+    <a href="mailto:faridchileshossma@gmail.com"
+       class="inline-block mt-6 bg-white text-blue-700 font-semibold px-6 py-3 rounded-md hover:bg-gray-100 transition transform hover:scale-105">
+       Enviar correo
+    </a>
+
+    <!-- ✅ BOTÓN WHATSAPP -->
+    <a href="https://wa.me/573001234567?text=Hola%20Fari,%20vi%20tu%20portafolio%20y%20quiero%20contactarte"
+       target="_blank"
+       class="inline-flex items-center gap-2 mt-6 bg-green-500 text-white px-6 py-3 rounded-md hover:bg-green-600 transition transform hover:scale-105">
+       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6">
+       Enviar mensaje por WhatsApp
+    </a>
+
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="bg-blue-900 text-gray-200 py-6 text-center">
+    <p>&copy; 2025 Fari Chiles · Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
