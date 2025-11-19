@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprar / Información - PC Clinic</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script>
+    function cargarProducto() {
+      const params = new URLSearchParams(window.location.search);
+      const producto = params.get("producto");
+      document.getElementById("producto").value = producto;
+    }
+  </script>
+
+</head>
+
+<body class="p-4" style="background-color: #0d6efd;">
+
+<body onload="cargarProducto()">
+
+  <div class="container mt-5">
+
+    <h2 class="text-center mb-4">Solicitud de Compra / Información</h2>
+
+    <form>
+
+      <div class="mb-3">
+        <label class="form-label">Producto seleccionado</label>
+        <input type="text" id="producto" class="form-control" readonly>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Número de contacto</label>
+        <input type="number" class="form-control" placeholder="Ej: 3158029656" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="3" placeholder="¿Qué deseas saber o comprar?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">
+        Enviar Solicitud
+      </button>
+
+    </form>
+
+    <div class="text-center mt-4">
+      <a href="ventas.html" class="btn btn-secondary">Volver a Ventas</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
