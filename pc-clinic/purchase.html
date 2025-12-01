@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprar / Información - PC Clinic</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script>
+    function cargarProducto() {
+      const params = new URLSearchParams(window.location.search);
+      const producto = params.get("producto");
+      document.getElementById("producto").value = producto;
+    }
+  </script>
+
+</head>
+
+<body onload="cargarProducto()" style="background-color:#0d6efd; color:white;">
+
+  <div class="container mt-5">
+
+    <h2 class="text-center mb-4">Solicitud de Compra / Información</h2>
+
+    <form>
+
+      <div class="mb-3">
+        <label class="form-label">Producto seleccionado</label>
+        <input type="text" id="producto" class="form-control" readonly>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Número de contacto</label>
+        <input type="number" class="form-control" placeholder="Ej: 3158029656" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="3" placeholder="¿Qué deseas saber o comprar?"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">
+        Enviar Solicitud
+      </button>
+
+    </form>
+
+    <div class="text-center mt-4">
+      <a href="ventas.html" class="btn btn-secondary">Volver a Ventas</a>
+    </div>
+
+  </div>
+ <section id="contacto" class="py-5 bg-light text-dark mt-5">
+    <div class="container text-center">
+
+      <h2 class="mb-4">Contáctanos</h2>
+      <p class="mb-4">Estamos disponibles para ayudarte con cualquier servicio o consulta.</p>
+
+      <!-- Íconos centrados -->
+      <div class="d-flex justify-content-center gap-4">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/573158029656" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+               alt="WhatsApp"
+               style="width:60px; height:60px;">
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/pc_clinic" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg"
+               alt="Facebook"
+               style="width:60px; height:60px;">
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/pc_clinic" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+               alt="Instagram"
+               style="width:60px; height:60px;">
+        </a>
+
+      </div>
+
+      
+</div>
+  <!-- FOOTER NEGRO COMPLETO -->
+  <div style="width: 100%; background-color: black; color: white; padding: 30px 20px; margin-top: 40px;">
+    <div class="text-center">
+      <p class="mt-2">📍 Ubicación: Roldanillo – Valle del Cauca, Colombia</p>
+      <p>📱 Celular: 315 802 9656</p>
+      <p>📧 Correo: pc.clinic.servicios@gmail.com</p>
+      <p>📸 Instagram: pc.clinic</p>
+      <p class="mt-3">© 2025 PC Clinic - Todos los derechos reservados</p>
+    </div>
+  </div>
+
+</body>
+</html>
